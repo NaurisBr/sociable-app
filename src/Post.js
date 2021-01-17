@@ -26,6 +26,7 @@ function Post({ postId, user, username, caption, imageUrl, iconImage }) {
     };
   }, [postId]);
 
+  //adding comments to friebase collection
   const postComment = (event) => {
     event.preventDefault();
     db.collection("posts").doc(postId).collection("comments").add({
