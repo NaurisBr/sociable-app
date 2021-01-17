@@ -41,6 +41,8 @@ function App() {
   const [email, setEmail] = useState("");
   const [user, setUser] = useState(null);
 
+  //User authentication
+
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
