@@ -36,7 +36,7 @@ function Post({ postId, user, username, caption, imageUrl, iconImage }) {
     });
     setComment("");
   };
-
+  //website structure (html)
   return (
     <div className="post">
       <div className="post__header">
